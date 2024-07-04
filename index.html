@@ -3,32 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Website Design</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="picture/revou.jpg" height="40">
+            <img src="picture/revou.jpg" height="500">
         </div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Our Profile</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Message Us</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#our-profile">Our Profile</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#message-us">Message Us</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
-        <section class="welcome-section">
-            <h1>Hi Semua REVONEERS, Welcome to Websiteku</h1>
-            <p>Ini adalah website pertama</p>
-            <img src="picture/website.png" height="100">
+        <section id="home" class="welcome-section">
+            <h1>Hi Semua, Welcome To Website</h1>
+            <p>Ini adalah websiteku</p>
+            <img src="picture/website.png" alt="websiteku">
         </section>
         
-        <section class="headquarters-section">
+        <section id="our-profile" class="profile-section">
+            <h2>Our Profile</h2>
+            <p>Welcome to our profile page! We are a team of dedicated professionals passionate about web development. Our goal is to create beautiful and functional websites that meet our clients' needs.</p>
+        </section>
+
+        <section id="portfolio" class="headquarters-section">
             <h2>Our Headquarters</h2>
             <div class="locations">
                 <div class="location">
@@ -46,34 +51,32 @@
             </div>
         </section>
         
-        <section class="message-section">
+        <section id="message-us" class="message-section">
             <h2>Message Us</h2>
-            <div class="form-container">
-                <form id="messageForm">
-                    <label for="name">Nama:</label>
-                    <input type="text" id="name" name="name">
-                    
-                    <label for="dob">Tanggal Lahir:</label>
-                    <input type="date" id="dob" name="dob">
-                    
-                    <label>Jenis Kelamin:</label>
-                    <input type="radio" id="male" name="gender" value="Laki-Laki">
-                    <label for="male">Laki-Laki</label>
-                    <input type="radio" id="female" name="gender" value="Perempuan">
-                    <label for="female">Perempuan</label>
-                    
-                    <label for="message">Pesan:</label>
-                    <textarea id="message" name="message"></textarea>
-                    
-                    <button type="submit">Submit</button>
-                </form>
-                <div class="form-data">
-                    <p>Current time: <span id="currentTime"></span></p>
-                    <p>Nama: <span id="displayName"></span></p>
-                    <p>Tanggal Lahir: <span id="displayDob"></span></p>
-                    <p>Jenis Kelamin: <span id="displayGender"></span></p>
-                   <p></p><p>Pesan: <span id="displayMessage"></span></p>
-                </div>
+            <form id="messageForm">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name">
+                
+                <label for="dob">Tanggal Lahir:</label>
+                <input type="date" id="dob" name="dob">
+                
+                <label>Jenis Kelamin:</label>
+                <input type="radio" id="male" name="gender" value="Laki-Laki">
+                <label for="male">Laki-Laki</label>
+                <input type="radio" id="female" name="gender" value="Perempuan">
+                <label for="female">Perempuan</label>
+                
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message"></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+            <div class="form-data">
+                <p>Current time: <span id="currentTime"></span></p>
+                <p>Nama: <span id="displayName"></span></p>
+                <p>Tanggal Lahir: <span id="displayDob"></span></p>
+                <p>Jenis Kelamin: <span id="displayGender"></span></p>
+                <p>Pesan: <span id="displayMessage"></span></p>
             </div>
         </section>
     </main>
@@ -82,6 +85,6 @@
         <p>Created By Evan Widirga</p>
     </footer>
     
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

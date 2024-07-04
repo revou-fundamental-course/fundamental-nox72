@@ -46,15 +46,18 @@ nav ul li a {
     color: #666;
 }
 
-.placeholder-image {
-    width: 100%;
-    max-width: 1366px;
-    height: 578px;
-    background-color: #eee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px auto;
+.profile-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.profile-section h2 {
+    margin-bottom: 20px;
+}
+
+.profile-section p {
+    color: #333;
 }
 
 .headquarters-section {
@@ -87,12 +90,6 @@ nav ul li a {
     padding: 50px 20px;
     display: flex;
     justify-content: space-between;
-}
-
-.form-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
 }
 
 .message-section form {
