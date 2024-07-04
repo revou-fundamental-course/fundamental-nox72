@@ -1,20 +1,17 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const nameSpan = document.getElementById('name');
-    const userName = prompt('Please enter your name:');
-    nameSpan.textContent = userName;
-
-    const form = document.getElementById('messageForm');
-    form.addEventListener('submit', function(event) {
-        event.preventDefault();
+document.addEventListener("DOMContentLoaded", function() {
+    // function
+    function submitForm() {
         const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const phone = document.getElementById('phone').value;
+        const dob = document.getElementById('dob').value;
+        const gender = document.querySelector('input[name="gender"]:checked').value;
         const message = document.getElementById('message').value;
-
-        if (name && email && phone && message) {
-            alert('Form submitted successfully!');
-        } else {
-            alert('Please fill out all fields.');
-        }
-    });
+        const currentTime = new Date().toLocaleString();
+        
+        document.getElementById('currentTime').innerText = `Current time: ${currentTime}`;
+        document.getElementById('responseText').innerText = 
+            `Nama: ${name}\nTanggal Lahir: ${dob}\nJenis Kelamin: ${gender}\nPesan: ${message}`;
+    }
+    
+    // expose
+    window.submitForm = submitForm;
 });

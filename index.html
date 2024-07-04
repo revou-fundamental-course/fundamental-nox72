@@ -1,42 +1,65 @@
-<!DOCTYPE html>
+s<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Profile</title>
+    <title>My Website</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#profile">Our Profile</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-            <li><a href="#message">Message Us</a></li>
-        </ul>
-    </nav>
-
-    <section id="home">
-        <h1>Hi <span id="name">Name</span>, Welcome To Website</h1>
-    </section>
-
-    <section id="profile">
-        <h2>Our Profile</h2>
-        <!-- Add profile content here -->
-    </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <!-- Add contact information here -->
-    </section>
-
-    <section id="message">
-        <h2>Message Us</h2>
-        <form id="messageForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required>
-            <label for="messa
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our Profile</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="welcome">
+            <h1>Hi <span id="username">Harfi</span>, Welcome To Website</h1>
+            <p>Ini adalah website latihan pertama</p>
+            <div class="image-placeholder">1366x578</div>
+        </section>
+        <section class="headquarters">
+            <h2>Our Headquarter</h2>
+            <div class="cities">
+                <div class="city">Jakarta</div>
+                <div class="city">Bandung</div>
+                <div class="city">Surabaya</div>
+            </div>
+        </section>
+        <section class="contact">
+            <h2>Message Us</h2>
+            <form id="contactForm">
+                <label for="name">Nama</label>
+                <input type="text" id="name" name="name">
+                
+                <label for="dob">Tanggal Lahir</label>
+                <input type="date" id="dob" name="dob">
+                
+                <label>Jenis Kelamin</label>
+                <input type="radio" id="male" name="gender" value="Laki-Laki">
+                <label for="male">Laki-Laki</label>
+                <input type="radio" id="female" name="gender" value="Perempuan">
+                <label for="female">Perempuan</label>
+                
+                <label for="message">Pesan</label>
+                <textarea id="message" name="message"></textarea>
+                
+                <button type="button" onclick="submitForm()">Submit</button>
+            </form>
+            <div class="response">
+                <p id="currentTime"></p>
+                <p id="responseText"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Created By [Your Name]</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html> 
